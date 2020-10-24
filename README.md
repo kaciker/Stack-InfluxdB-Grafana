@@ -1,29 +1,9 @@
-# IIOT-All-in-ONE
-
-### Collecting data from LoRaWAN, injecting directly to InfluxDB through direct integration in Chirpstack. And being available to Grafana to graphic. All topics are availables by MQTT and usables in Node-red
-
+# Stack-InfluxdB-Grafana
 # ** Components 
 
-## Chirpstack - InfluxDB - Chronograf - Grafana - Node Red - Portainer - Mosquitto
+##  InfluxDB - Chronograf - Grafana - Node Red - Portainer - Mosquitto
 Coming from Brocaar for Chirpstack server deployment, and from jkehres for -InfluxDB, Chronograf,and Grafana, adding manually Portainer and noder Red from their original websites.
-
-# ChirpStack Docker   (# [brocaar](https://github.com/brocaar)/)
-Brocaar (The Master) -- [repository brocaar](https://github.com/brocaar/chirpstack-docker)
-  
-This repository contains a skeleton to setup the [ChirpStack](https://www.chirpstack.io)  
-open-source LoRaWAN Network Server stack using [Docker Compose](https://docs.docker.com/compose/).  
-
-* Mosquitto included
-  
-Please check the original doc for questions.
   __________________________________________
-
-
-# Docker-compose-influxdb-grafana (# [jkehres](https://github.com/jkehres))
-
-jkehres     -- [repository jkehres](https://github.com/jkehres/docker-compose-influxdb-grafana)
- 
-* Modification, DB base name, exposition 8888 port
 
 Multi-container Docker app built from the following services:
 
@@ -46,7 +26,8 @@ Useful for quickly setting up a monitoring stack for performance testing. Combin
       
 To clone this repository, you need to execute the following commands:
 
-- git clone https://github.com/kaciker/iiOT-All-in-ONE.git
+- git clone https://github.com/kaciker/Stack-InfluxdB-Grafana
+.git
 
 - cd iiOT-All-in-ONE
 
@@ -61,8 +42,6 @@ To stop it:
 The services in the app run on the following ports:
 | Host Port | Service |
 | - | - |
-| 8080 | Chirpstack|
-| 1770 | Bridge Chirp|
 | 3000 | Grafana |
 | 8086 | InfluxDB |
 | 1883 | Mosquitto|
@@ -71,12 +50,7 @@ The services in the app run on the following ports:
 | 9000 | Portainer|
 
 **Notes:** 
--------------
-#### Chirpstack  
-The ChirpStack stack components are pre-configured to work in the EU868 LoRaWAN band. Please refer  to the `configuration/chirpstack-network-server/examples` directory for more configuration  examples.  
-When adding the Network Server in the ChirpStack Application Server web-interface  
-(see [Network Servers](https://www.chirpstack.io/application-server/use/network-servers/)),  
-you must enter `chirpstack-network-server:8000` as the Network Server `hostname:IP`.
+
 #### Chronograf
 Note that Chronograf does not support username/password authentication. Anyone can connect to the service and will have full admin access. Consequently, the service is  publically exposed.
 To you, to down the service in Portainer if you are not using, or to reinstall the port forwarding 
