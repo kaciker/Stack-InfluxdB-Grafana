@@ -26,8 +26,7 @@ Useful for quickly setting up a monitoring stack for performance testing. Combin
       
 To clone this repository, you need to execute the following commands:
 
-- git clone https://github.com/kaciker/Stack-InfluxdB-Grafana
-.git
+- git clone https://github.com/kaciker/Stack-InfluxdB-Grafana.git
 
 - cd iiOT-All-in-ONE
 
